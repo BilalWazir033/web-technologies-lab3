@@ -1,0 +1,85 @@
+body{
+font-family:Arial, sans-serif;
+background:#f4f6f9;
+text-align:center;
+margin:0;
+padding:30px;
+}
+
+.title{
+margin-bottom:30px;
+}
+
+/* responsive wrapper */
+
+.table-container{
+overflow-x:auto;
+}
+
+/* table styling */
+
+table{
+border-collapse:collapse;
+width:100%;
+max-width:900px;
+margin:auto;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+th, td{
+padding:12px;
+border:1px solid #ddd;
+}
+
+/* header */
+
+th{
+background:#2563eb;
+color:white;
+}
+
+/* zebra striping */
+
+tr:nth-child(even){
+background:#f2f2f2;
+}
+
+/* hover effect */
+
+tr:hover{
+background:#e6f0ff;
+}
+
+/* lunch break */
+
+.break{
+background:#ffeaa7;
+font-weight:bold;
+}
+
+/* course colors */
+
+.os{background:#dfe6e9;}
+.physics{background:#ffe0b2;}
+.math{background:#e1bee7;}
+.web{background:#bbdefb;}
+.ai{background:#c8e6c9;}
+.ds{background:#ffd6e7;}
+.islamic{background:#fff3cd;}
+.free{background:#f8f9fa;}
+
+/* back button */
+
+.back{
+text-decoration:none;
+background:#2563eb;
+color:white;
+padding:10px 20px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.back:hover{
+background:#1e40af;
+}

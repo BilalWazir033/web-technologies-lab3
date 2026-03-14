@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Advanced CSS Effects</title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+text-align:center;
+padding:40px;
+}
+
+/* ------------------- */
+/* Gradient Text */
+/* ------------------- */
+
+.gradient-text{
+font-size:50px;
+font-weight:bold;
+background:linear-gradient(45deg,#ff416c,#ff4b2b,#1e90ff);
+-webkit-background-clip:text;
+color:transparent;
+margin-bottom:40px;
+}
+
+/* ------------------- */
+/* Text Clipping Image */
+/* ------------------- */
+
+.image-text{
+font-size:70px;
+font-weight:bold;
+
+background:url("../images/backgrounds/bg4.jpg");
+background-size:cover;
+
+-webkit-background-clip:text;
+color:transparent;
+
+margin:40px;
+}
+
+/* ------------------- */
+/* Custom Checkbox */
+/* ------------------- */
+
+.checkbox-container{
+margin:20px;
+}
+
+input[type="checkbox"]{
+appearance:none;
+width:22px;
+height:22px;
+border:2px solid #2563eb;
+border-radius:5px;
+cursor:pointer;
+}
+
+input[type="checkbox"]:checked{
+background:#2563eb;
+}
+
+/* ------------------- */
+/* Custom Radio */
+/* ------------------- */
+
+input[type="radio"]{
+appearance:none;
+width:20px;
+height:20px;
+border:2px solid #e63946;
+border-radius:50%;
+cursor:pointer;
+}
+
+input[type="radio"]:checked{
+background:#e63946;
+}
+
+/* ------------------- */
+/* Loading Animation */
+/* ------------------- */
+
+.loader{
+margin:40px auto;
+border:6px solid #ddd;
+border-top:6px solid #2563eb;
+border-radius:50%;
+width:60px;
+height:60px;
+
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+/* ------------------- */
+/* Complex Shadow */
+/* ------------------- */
+
+.shadow-box{
+width:250px;
+margin:40px auto;
+padding:30px;
+
+background:white;
+
+box-shadow:
+0 5px 10px rgba(0,0,0,0.2),
+0 10px 20px rgba(0,0,0,0.15),
+0 20px 30px rgba(0,0,0,0.1);
+
+border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 class="gradient-text">Gradient Text</h1>
+
+<div class="image-text">
+CSS EFFECT
+</div>
+
+<h2>Custom Form Controls</h2>
+
+<div class="checkbox-container">
+
+<label>
+<input type="checkbox"> Accept Terms
+</label>
+
+<br><br>
+
+<label>
+<input type="radio" name="choice"> Option A
+</label>
+
+<label>
+<input type="radio" name="choice"> Option B
+</label>
+
+</div>
+
+<h2>CSS Loading Animation</h2>
+
+<div class="loader"></div>
+
+<h2>Complex Shadow Effect</h2>
+
+<div class="shadow-box">
+This box demonstrates layered shadow effects for depth.
+</div>
+
+<p style="margin-top:40px;">
+<a href="../index.html">← Back to Home</a>
+</p>
+
+</body>
+</html>

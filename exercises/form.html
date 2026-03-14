@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Signup Form</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+padding:40px;
+}
+
+form{
+background:white;
+padding:30px;
+border-radius:10px;
+width:400px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+/* labels */
+
+label{
+font-weight:bold;
+}
+
+/* input fields */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+
+border:2px solid #ccc;
+border-radius:6px;
+
+transition:0.3s;
+}
+
+/* focus state */
+
+input:focus,
+select:focus{
+
+border-color:#2563eb;
+outline:none;
+box-shadow:0 0 5px rgba(37,99,235,0.5);
+}
+
+/* checkbox */
+
+input[type="checkbox"]{
+margin-right:8px;
+}
+
+/* button styling */
+
+input[type="submit"]{
+
+width:100%;
+padding:12px;
+border:none;
+border-radius:6px;
+
+background:linear-gradient(45deg,#2563eb,#6a5acd);
+color:white;
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* hover state */
+
+input[type="submit"]:hover{
+transform:scale(1.05);
+opacity:0.9;
+}
+
+/* error styling */
+
+input:invalid{
+border-color:red;
+}
+
+/* success styling */
+
+input:valid{
+border-color:#10b981;
+}
+
+.success-message{
+display:none;
+color:green;
+text-align:center;
+margin-top:15px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div>
+
+<h1>Student Signup</h1>
+
+<form>
+
+<p>
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" name="name" placeholder="Your full name" required>
+</p>
+
+<p>
+<label for="studentID">Student ID:</label><br>
+<input type="text" id="studentID" name="studentID" placeholder="Your student ID" required>
+</p>
+
+<p>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="you@example.com" required>
+</p>
+
+<p>
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password" placeholder="Create a password" required>
+</p>
+
+<p>
+<label for="course">Choose Your Course:</label><br>
+<select id="course" name="course" required>
+<option value="">--Select Course--</option>
+<option value="cybersecurity">Cybersecurity Basics</option>
+<option value="cloud">Cloud Computing</option>
+<option value="ml">Machine Learning</option>
+<option value="iot">Internet of Things (IoT)</option>
+<option value="robotics">Robotics Fundamentals</option>
+<option value="webdev">Modern Web Development</option>
+</select>
+</p>
+
+<p>
+<label>Semester:</label><br>
+<select name="semester" required>
+<option value="">--Select Semester--</option>
+<option value="spring">Spring</option>
+<option value="summer">Summer</option>
+<option value="fall">Fall</option>
+</select>
+</p>
+
+<p>
+<input type="checkbox" id="terms" name="terms" required>
+<label for="terms">I agree to the terms and conditions</label>
+</p>
+
+<p>
+<input type="submit" value="Register Now">
+</p>
+
+</form>
+
+<p style="text-align:center; margin-top:15px;">
+<a href="../index.html">← Back to Home</a>
+</p>
+
+</div>
+
+</body>
+</html>

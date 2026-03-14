@@ -1,0 +1,61 @@
+/* Image Effects */
+
+.rounded{
+border-radius:20px;
+}
+
+.circle{
+border-radius:50%;
+}
+
+.shadow{
+box-shadow:0 4px 10px rgba(0,0,0,0.4);
+}
+
+.image-hover{
+transition:0.4s;
+}
+
+.image-hover:hover{
+transform:scale(1.1);
+filter:brightness(120%);
+}
+
+/* Transform gallery */
+
+.rotate:hover{
+transform:rotate(15deg);
+}
+
+.scale:hover{
+transform:scale(1.2);
+}
+
+.translate:hover{
+transform:translateY(-20px);
+}
+
+/* Gradient Text */
+
+.gradient-text{
+background:linear-gradient(90deg, red, orange, blue);
+-webkit-background-clip:text;
+color:transparent;
+font-size:40px;
+}
+
+/* Loader */
+
+.loader{
+border:6px solid #ddd;
+border-top:6px solid #2563eb;
+border-radius:50%;
+width:50px;
+height:50px;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}

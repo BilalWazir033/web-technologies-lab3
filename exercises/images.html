@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Image Styling Portfolio</title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+text-align:center;
+}
+
+h2{
+margin-top:30px;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:30px;
+}
+
+/* container for overlay */
+
+.img-box{
+position:relative;
+width:250px;
+}
+
+/* images */
+
+.img-box img{
+width:100%;
+border-radius:10px;
+border:4px solid white;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.4s;
+}
+
+/* hover effect */
+
+.img-box img:hover{
+transform:scale(1.08);
+}
+
+/* circular image */
+
+.circle img{
+border-radius:50%;
+}
+
+/* CSS filters */
+
+.grayscale img{
+filter:grayscale(100%);
+}
+
+.blur img{
+filter:blur(1px);
+}
+
+.brightness img{
+filter:brightness(120%);
+}
+
+.sepia img{
+filter:sepia(80%);
+}
+
+/* overlay text */
+
+.overlay{
+position:absolute;
+bottom:0;
+background:rgba(0,0,0,0.6);
+color:white;
+width:100%;
+text-align:center;
+padding:10px;
+opacity:0;
+transition:0.4s;
+border-radius:0 0 10px 10px;
+}
+
+.img-box:hover .overlay{
+opacity:1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Image Styling Portfolio</h2>
+
+<div class="gallery">
+
+<div class="img-box">
+<img src="../images/gallery/pic1.jpg">
+<div class="overlay">Beautiful Nature</div>
+</div>
+
+<div class="img-box circle">
+<img src="../images/gallery/pic2.jpg">
+<div class="overlay">Circular Image</div>
+</div>
+
+<div class="img-box grayscale">
+<img src="../images/gallery/pic3.jpg">
+<div class="overlay">Grayscale Filter</div>
+</div>
+
+<div class="img-box blur">
+<img src="../images/gallery/pic4.jpg">
+<div class="overlay">Blur Effect</div>
+</div>
+
+<div class="img-box brightness">
+<img src="../images/gallery/pic5.jpg">
+<div class="overlay">Brightness Filter</div>
+</div>
+
+<div class="img-box sepia">
+<img src="../images/gallery/pic6.jpg">
+<div class="overlay">Sepia Effect</div>
+</div>
+
+</div>
+
+<p style="text-align:center;">
+<a href="../index.html">← Back to Home</a>
+</p>
+
+</body>
+</html>

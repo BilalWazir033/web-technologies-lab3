@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Background Gallery</title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+text-align:center;
+}
+
+h2{
+margin-top:30px;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* common box style */
+
+.box{
+width:300px;
+height:200px;
+margin:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:20px;
+font-weight:bold;
+border-radius:10px;
+
+background-position:center;
+background-repeat:no-repeat;
+background-size:contain;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* solid color */
+
+.solid{
+background:#2563eb;
+}
+
+/* image backgrounds */
+
+.bg1{
+background-image:url("../images/backgrounds/bg1.jpg");
+}
+
+.bg2{
+background-image:url("../images/backgrounds/bg2.jpg");
+}
+
+.bg3{
+background-image:url("../images/backgrounds/bg5.jpg");
+}
+
+/* gradients */
+
+.gradient{
+background:linear-gradient(45deg,#ff6b6b,#6a5acd);
+}
+
+.radial{
+background:radial-gradient(circle,#ff7f50,#1e90ff);
+}
+
+/* multiple background layers */
+
+.multi{
+background-image:
+url("../images/backgrounds/bg7.jpg"),
+linear-gradient(blue,purple);
+
+background-blend-mode:overlay;
+background-size:cover;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Background Gallery</h2>
+
+<div class="container">
+
+<div class="box solid">Solid Color</div>
+
+<div class="box bg1">Image 1</div>
+
+<div class="box bg2">Image 2</div>
+
+<div class="box bg3">Image 3</div>
+
+<div class="box gradient">Linear Gradient</div>
+
+<div class="box radial">Radial Gradient</div>
+
+<div class="box multi">Multiple Backgrounds</div>
+
+</div>
+
+<p style="text-align:center;">
+<a href="../index.html">← Back to Home</a>
+</p>
+
+</body>
+</html>

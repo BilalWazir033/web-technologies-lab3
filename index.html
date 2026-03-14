@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>CSS Lab 3 Showcase</title>
+
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/typography.css">
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/effects.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Poppins', sans-serif;
+margin:0;
+background:linear-gradient(135deg,#f8fafc,#e0f2fe);
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+/* header */
+
+header{
+background:#0f172a;
+color:white;
+padding:15px;
+text-align:center;
+box-shadow:0 3px 8px rgba(0,0,0,0.3);
+}
+
+header h1{
+margin:5px;
+font-weight:600;
+}
+
+/* navigation */
+
+.menu{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px;
+margin-top:10px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+padding:6px 12px;
+border-radius:6px;
+display:flex;
+align-items:center;
+gap:6px;
+font-size:14px;
+transition:0.3s;
+}
+
+.menu a:hover{
+background:#38bdf8;
+color:#0f172a;
+}
+
+/* hero */
+
+.hero{
+text-align:center;
+padding:25px 10px;
+}
+
+.hero h2{
+font-size:26px;
+color:#0f172a;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+color:#475569;
+font-size:15px;
+}
+
+/* cards */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:20px;
+max-width:1000px;
+margin:auto;
+}
+
+/* card */
+
+.card{
+background:white;
+border-radius:10px;
+padding:18px;
+text-align:center;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+.card img{
+width:32px;
+margin-bottom:8px;
+}
+
+.card h3{
+margin:5px;
+font-size:17px;
+color:#0f172a;
+}
+
+.card p{
+font-size:13px;
+color:#64748b;
+}
+
+.card a{
+text-decoration:none;
+display:inline-block;
+margin-top:6px;
+color:#0284c7;
+font-weight:500;
+}
+
+/* footer */
+
+footer{
+margin-top:auto;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:10px;
+font-size:13px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Web Technologies Lab 3</h1>
+
+<nav class="menu">
+
+<a href="index.html"><img src="images/icons/home.jpg" width="18">Home</a>
+<a href="exercises/selectors.html"><img src="images/icons/user.jpg" width="18">Selectors</a>
+<a href="exercises/typography.html"><img src="images/icons/insta.jpg" width="18">Typography</a>
+<a href="exercises/backgrounds.html"><img src="images/icons/netflix.jpg" width="18">Backgrounds</a>
+<a href="exercises/images.html"><img src="images/icons/youtube.jpg" width="18">Images</a>
+<a href="exercises/buttons.html"><img src="images/icons/cart.jpg" width="18">Buttons</a>
+<a href="exercises/form.html"><img src="images/icons/user.jpg" width="18">Form</a>
+<a href="exercises/cards.html"><img src="images/icons/netflix.jpg" width="18">Cards</a>
+<a href="exercises/navigation.html"><img src="images/icons/home.jpg" width="18">Navigation</a>
+<a href="exercises/transforms.html"><img src="images/icons/user.jpg" width="18">Transforms</a>
+<a href="exercises/advanced-effects.html"><img src="images/icons/netflix.jpg" width="18">Effects</a>
+<a href="exercises/profile.html"><img src="images/icons/user.jpg" width="18">Portfolio</a>
+<a href="exercises/schedule.html"><img src="images/icons/user.jpg" width="18">Schedule</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>Welcome to My CSS Lab Project</h2>
+
+<p>
+This website demonstrates multiple CSS concepts learned in the Web Technologies Lab including selectors,
+typography design, background effects, image styling, form design, navigation systems,
+CSS transforms, and advanced visual effects.
+</p>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<img src="images/icons/user.jpg">
+<h3>Selectors</h3>
+<p>Practice of CSS selectors.</p>
+<a href="exercises/selectors.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/insta.jpg">
+<h3>Typography</h3>
+<p>Font and text styling.</p>
+<a href="exercises/typography.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/netflix.jpg">
+<h3>Backgrounds</h3>
+<p>Gradient and image backgrounds.</p>
+<a href="exercises/backgrounds.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/youtube.jpg">
+<h3>Images</h3>
+<p>Image styling effects.</p>
+<a href="exercises/images.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/cart.jpg">
+<h3>Buttons</h3>
+<p>Button styling collection.</p>
+<a href="exercises/buttons.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/user.jpg">
+<h3>Portfolio</h3>
+<p>Styled personal portfolio.</p>
+<a href="exercises/profile.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/user.jpg">
+<h3>Form</h3>
+<p>Styled form elements.</p>
+<a href="exercises/form.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/netflix.jpg">
+<h3>Cards</h3>
+<p>CSS card components.</p>
+<a href="exercises/cards.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/home.jpg">
+<h3>Navigation</h3>
+<p>Navigation bar design.</p>
+<a href="exercises/navigation.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/user.jpg">
+<h3>Transforms</h3>
+<p>CSS transform effects.</p>
+<a href="exercises/transforms.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/netflix.jpg">
+<h3>Effects</h3>
+<p>Advanced CSS effects.</p>
+<a href="exercises/advanced-effects.html">View</a>
+</div>
+
+<div class="card">
+<img src="images/icons/user.jpg">
+<h3>Schedule</h3>
+<p>Weekly course schedule.</p>
+<a href="exercises/schedule.html">View</a>
+</div>
+
+</section>
+
+<footer>
+
+<p>CS-224L Web Technologies | UET Peshawar</p>
+
+</footer>
+
+</body>
+
+</html>

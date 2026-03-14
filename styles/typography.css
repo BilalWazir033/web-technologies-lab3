@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&family=Roboto&display=swap');
+
+h1{
+font-family:'Playfair Display', serif;
+font-size:40px;
+text-align:center;
+}
+
+h2{
+font-family:'Poppins', sans-serif;
+text-transform:uppercase;
+letter-spacing:2px;
+}
+
+p{
+font-family:'Roboto', sans-serif;
+font-size:18px;
+line-height:1.6;
+}
+
+.shadow-text{
+font-size:30px;
+text-shadow:2px 2px 5px gray;
+}
+
+.center{
+text-align:center;
+}
+
+.right{
+text-align:right;
+}
+
+.upper{
+text-transform:uppercase;
+}
+
+.decorate{
+text-decoration:underline;
+}

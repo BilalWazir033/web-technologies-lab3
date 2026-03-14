@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Button Styling Collection</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+background:#f4f4f4;
+padding:40px;
+}
+
+h2{
+margin-bottom:30px;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+/* base button */
+
+.btn{
+border:none;
+cursor:pointer;
+color:white;
+transition:0.3s;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* different sizes */
+
+.small{
+padding:6px 14px;
+font-size:12px;
+}
+
+.medium{
+padding:10px 20px;
+font-size:16px;
+}
+
+.large{
+padding:15px 30px;
+font-size:20px;
+}
+
+/* colors */
+
+.blue{
+background:#2563eb;
+}
+
+.green{
+background:#10b981;
+}
+
+.red{
+background:#ef4444;
+}
+
+/* gradient button */
+
+.gradient{
+background:linear-gradient(45deg,#ff7e5f,#6a5acd);
+}
+
+/* shapes */
+
+.round{
+border-radius:30px;
+}
+
+.square{
+border-radius:5px;
+}
+
+.circle{
+border-radius:50%;
+width:60px;
+height:60px;
+}
+
+/* hover */
+
+.btn:hover{
+transform:scale(1.1);
+opacity:0.9;
+}
+
+/* focus */
+
+.btn:focus{
+outline:3px solid orange;
+}
+
+/* disabled */
+
+.btn:disabled{
+background:gray;
+cursor:not-allowed;
+box-shadow:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Button Styling Collection</h2>
+
+<div class="container">
+
+<button class="btn small blue square">Small</button>
+
+<button class="btn medium green round">Medium</button>
+
+<button class="btn large red square">Large</button>
+
+<button class="btn medium gradient round">Gradient</button>
+
+<button class="btn circle blue">+</button>
+
+<button class="btn medium green round">Hover Me</button>
+
+<button class="btn medium blue" disabled>Disabled</button>
+
+</div>
+
+<p style="text-align:center;">
+<a href="../index.html">← Back to Home</a>
+</p>
+
+</body>
+
+</html>

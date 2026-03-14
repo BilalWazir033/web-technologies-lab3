@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Navigation Menu Styling</title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+h2{
+text-align:center;
+margin:30px;
+}
+
+/* ------------------- */
+/* Horizontal Navbar */
+/* ------------------- */
+
+.navbar{
+display:flex;
+justify-content:center;
+background:#2563eb;
+}
+
+.navbar a{
+color:white;
+padding:14px 20px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.navbar a:hover{
+background:#1e40af;
+}
+
+.navbar a.active{
+background:#1e3a8a;
+}
+
+/* ------------------- */
+/* Dropdown */
+/* ------------------- */
+
+.dropdown{
+position:relative;
+}
+
+.dropdown-content{
+display:none;
+position:absolute;
+background:white;
+min-width:150px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+color:black;
+display:block;
+padding:10px;
+}
+
+.dropdown-content a:hover{
+background:#ddd;
+}
+
+.dropdown:hover .dropdown-content{
+display:block;
+}
+
+/* ------------------- */
+/* Vertical Menu */
+/* ------------------- */
+
+.vertical{
+width:200px;
+background:#333;
+padding-top:20px;
+margin:40px auto;
+}
+
+.vertical a{
+display:block;
+color:white;
+padding:12px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.vertical a:hover{
+background:#555;
+}
+
+.vertical a.active{
+background:#2563eb;
+}
+
+/* ------------------- */
+/* Responsive */
+/* ------------------- */
+
+@media (max-width:600px){
+
+.navbar{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Navigation Menu Styling</h2>
+
+<!-- Horizontal Navbar -->
+
+<div class="navbar">
+
+<a class="active" href="#">Home</a>
+
+<a href="#">About</a>
+
+<div class="dropdown">
+
+<a href="#">Services</a>
+
+<div class="dropdown-content">
+
+<a href="#">Web Design</a>
+<a href="#">SEO</a>
+<a href="#">Marketing</a>
+
+</div>
+
+</div>
+
+<a href="#">Contact</a>
+
+</div>
+
+
+<!-- Vertical Menu -->
+
+<div class="vertical">
+
+<a class="active" href="#">Dashboard</a>
+
+<a href="#">Profile</a>
+
+<a href="#">Settings</a>
+
+<a href="#">Logout</a>
+
+</div>
+
+<p style="text-align:center;">
+<a href="../index.html">← Back to Home</a>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+
+<h2>CSS Selectors Practice</h2>
+
+<p class="special">This paragraph uses class selector.</p>
+
+<p id="unique">This uses ID selector.</p>
+
+<div>
+<p>Child paragraph example</p>
+</div>
+
+<input type="text" placeholder="Type here">
+
+<a href="#">Hover me</a>
+
+<ul>
+<li>Item One</li>
+<li>Item Two</li>
+<li>Item Three</li>
+</ul>
+
+<style>
+
+p{color:darkblue;} /* element */
+
+.special{color:red;} /* class */
+
+#unique{font-weight:bold;} /* id */
+
+div p{background:#eee;} /* descendant */
+
+ul > li{color:green;} /* child */
+
+a:hover{color:red;} /* pseudo class */
+
+li:first-child{font-weight:bold;}
+
+li:last-child{color:purple;}
+
+input[type="text"]{
+border:2px solid blue;
+}
+
+p::first-letter{
+font-size:30px;
+color:orange;
+}
+
+p::after{
+content:" ✔";
+color:green;
+}
+
+</style>
+
+<p style="text-align:center;">
+<a href="../index.html">← Back to Home</a>
+</p>
+
+</body>
+</html>
