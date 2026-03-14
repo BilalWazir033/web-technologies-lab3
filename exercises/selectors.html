@@ -1,68 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../styles/main.css">
-</head>
-
-<body>
-
-<h2>CSS Selectors Practice</h2>
-
-<p class="special">This paragraph uses class selector.</p>
-
-<p id="unique">This uses ID selector.</p>
-
-<div>
-<p>Child paragraph example</p>
-</div>
-
-<input type="text" placeholder="Type here">
-
-<a href="#">Hover me</a>
-
-<ul>
-<li>Item One</li>
-<li>Item Two</li>
-<li>Item Three</li>
-</ul>
-
+<title>CSS Selectors Practice</title>
 <style>
+/* 1 Basic Selectors */
+h2{
+color:#2563eb;
+}
+p{
+color:#333;
+}
+#special{
+color:red;
+}
+.box{
+background:#dbeafe;
+padding:10px;
+margin:10px;
+}
 
-p{color:darkblue;} /* element */
+*{
+font-family:Arial;
+}
 
-.special{color:red;} /* class */
-
-#unique{font-weight:bold;} /* id */
-
-div p{background:#eee;} /* descendant */
-
-ul > li{color:green;} /* child */
-
-a:hover{color:red;} /* pseudo class */
-
-li:first-child{font-weight:bold;}
-
-li:last-child{color:purple;}
+/* 2 Attribute Selectors */
 
 input[type="text"]{
 border:2px solid blue;
 }
 
-p::first-letter{
-font-size:30px;
+input[type="email"]{
+border:2px solid green;
+}
+
+a[target="_blank"]{
+color:purple;
+}
+
+/* 3 Combinators */
+
+div p{
+color:#444;
+}
+
+ul > li{
+color:#1e40af;
+}
+
+h2 + p{
+font-style:italic;
+}
+
+h2 ~ span{
 color:orange;
 }
 
-p::after{
-content:" ✔";
+/* 4 Pseudo Classes */
+
+a:hover{
+color:red;
+}
+
+input:focus{
+background:#eef2ff;
+}
+
+li:first-child{
+font-weight:bold;
+}
+
+li:last-child{
 color:green;
+}
+
+li:nth-child(3){
+color:purple;
+}
+
+/* 5 Pseudo Elements */
+
+p::first-letter{
+font-size:30px;
+color:#2563eb;
+}
+
+p::first-line{
+font-weight:bold;
 }
 
 </style>
 
-<p style="text-align:center;">
-<a href="../index.html">← Back to Home</a>
-</p>
+</head>
+
+<body>
+
+<h2>CSS Selectors Demonstration</h2>
+
+<p>This paragraph demonstrates pseudo-elements.</p>
+
+<p id="special">This paragraph uses an ID selector.</p>
+
+<div class="box">
+<p>This paragraph is inside a div.</p>
+</div>
+
+<h3>List Example</h3>
+
+<ul>
+<li>Item One</li>
+<li>Item Two</li>
+<li>Item Three</li>
+<li>Item Four</li>
+</ul>
+
+<h3>Form Example</h3>
+
+<input type="text" placeholder="Your Name"><br><br>
+<input type="email" placeholder="Email"><br><br>
+
+<a href="https://google.com" target="_blank">External Link</a>
+
+<br><br>
+
+<a href="../index.html">Back to Home</a>
 
 </body>
 </html>
